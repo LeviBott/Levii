@@ -64,14 +64,14 @@ const { limit } = require('./database/menu/limit*/
 const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const darkkey = 'apidark';
-const BotName = 'darkbot'; 
+const BotName = 'LeviBott'; 
 const instagram = 'http://www.instagram.com/'; 
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:Dark\n' // Nama kamu
+            + 'FN:Levi\n' // Nama kamu
             + 'ORG:Lexa;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=5522996215481:+55 2299621-5481\n' //Nomor whatsapp kamu
+            + 'TEL;type=CELL;type=VOICE;waid=559299720891:+55 92 9972-0891\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 const ngonsol = JSON.parse(fs.readFileSync('./settings/Miku.json'))
 const {
@@ -90,7 +90,7 @@ const {
 prefixbotbot = '.','!','#'
 blocked = []
 limitawal = '999'
-cr = '*Dark dominando*'
+cr = '*Marleyano bom é Marleyano sem vida*'
 
 /*********** LOAD FILE ***********/
 const _leveling = JSON.parse(fs.readFileSync('./database/group/leveling.json'))
@@ -250,7 +250,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Olá @${num.split('@')[0]}\nBem vindo ao grupo *${mdata.subject}*\n\nEspero que goste do grupo ❤️`
+				teks = `Olá @${num.split('@')[0]}\nLeia as regras e seja bem vindo(a) ao grupo *${mdata.subject}*\n\nEspero que goste do grupo ❤️`
 				let buffer = awat getbufferer(ppimg)
 				dark.sendMess(mdata.id, buffer, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				dark.sendMess(from, axios.get, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -261,7 +261,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Tchau @${num.split('@')[0]} Ja foi tarde 😂👋`
+				teks = `Tchau👋👋 @${num.split('@')[0]} Ja foi tarde 😂`
 				let buffer = awat getbufferer(ppimg)
 				dark.sendMess(mdata.id, buffer, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -302,35 +302,35 @@ async function starts() {
 			const isCmd = body.startsWith(prefixbotbot)
 
 			mess = {
-					wait: 'So um minuto amigo (a)',
+					wait: '⏳Espere, por favor...⏳',
 					success: '️❬ ✔ ❭ Sucesso 🖤',
 					levelon: '❬ ✔ ❭ *leveling* *ativado*',
 					leveloff: ' ❬ X ❭  *leveling* *desativado*',
 					levelnoton: '❬ X ❭ *leveling não ativado*',
 					levelnol: '*error* 0 °-°',
 					error: {
-				stick: '*Bem, falhe, tente novamente ^_^*',
+				stick: '*Bem, falhou, tente novamente ^_^*',
 				Iv: '𝗠𝗮𝗮𝗳 𝗹𝗶𝗻𝗸 𝘁𝗶𝗱𝗮𝗸 𝘃𝗮𝗹𝗶𝗱☹️'
 				{,
 				only: {
 					group: '[❗] Este comando só pode ser usado em grupos! ❌',
 					premium: '[❗] ESTE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
-					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD DARK BOT*',
+					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD*',
 					benned: 'Você para a banda, por favor, contate o proprietário para abrir sua banda',
 					ownerG: '[❗] Proprietário? Este é um recurso especial para o proprietário do bot ❌',
 					ownerB: '[❗] Proprietário? Este é um recurso especial para o proprietário do bot ❌',
-					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de Dark. Registre-se para fazer amizade com o bot Dark por meio, \n\nCommand : ${prefixbotbot}daftar nama|idade\nExemplo : ${prefixbotbot}daftar Dark|17\n\n──「 Dark BOT 」──`,
+					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, Você não está registrado. Registre-se para usar os comandos do bot por meio, \n\nCommand : ${prefixbotbot}daftar nama|idade\nExemplo : ${prefixbotbot}daftar Levi|17\n\n──「 Levi BOT 」──`,
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: ' [❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
 				}
 			}
 
 			const botNumber = dark.user.jid
-			const ownerNumber = ["5522996215481@s.whatsapp.net"] // replace this with your number
-			const mod = [ownerNumber,"5522996215481@s.whatsapp.net"]//ubah nomor lo
-			const adminbotnumber = ["5522996215481@s.whatsapp.net"]//ubah nomor lo
-			const frendsowner = ["5522996215481@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["5522996215481@s.whatsapp.net","559784130980@s.whatsapp.net","557599941062@s.whatsapp.net","558598669655@s.whatsapp.net","5511949051934@s.whatsapp.net","554792091566@s.whatsapp.net","558699541889@s.whatsapp.net","559294313229@s.whatsapp.net","554298653614@s.whatsapp.net","12267740582@s.whatsapp.net"]
+			const ownerNumber = ["559299720891@s.whatsapp.net"] // replace this with your number
+			const mod = [ownerNumber,"559299720891@s.whatsapp.net"]//ubah nomor lo
+			const adminbotnumber = ["559299720891@s.whatsapp.net"]//ubah nomor lo
+			const frendsowner = ["559299720891@s.whatsapp.net"]//ubah nomor lo
+			const premium = ["559299720891@s.whatsapp.net","+14806910563@s.whatsapp.net","5592999720891@s.whatsapp.net"]
 			const sGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? awat dark.groupMetadata(from) : ''
@@ -387,7 +387,7 @@ async function starts() {
                 console.error(err)
             }
         }
-        if (messC.includes("preto")){
+        if (messC.includes("seu preto")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
 		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
@@ -451,7 +451,7 @@ async function starts() {
 		{, 0)
 	}
 	
-	        if (messC.includes("macaco")){
+	        if (messC.includes("seu macaco")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
 		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
@@ -582,7 +582,7 @@ const get = require('got')
     dark.sendMess(id,`📌ÚLTIMOS DADOS DO DISTRITO COVID-19 DA INDONÉSIA\n\n*Positif* = ${positif} \n*Sembuh* = ${sembuh} \n*Meninggal* = ${meninggal}\n*Dirawat* = ${dirawat}\n\n*Stay safe dan selalu gunakan masker saat berpergian*`, MessageType.text, { quoted: m } );
 }
 	
-	if (messC.includes("fdp")){
+	if (messC.includes("bot fdp")){
 			dark.updatePresence(from, Presence.composing)
 			reply("teu pai")
 	}
@@ -592,7 +592,7 @@ const get = require('got')
 			reply("kskskskk")
 	}
 	
-			if (messC.includes("lixo")){
+			if (messC.includes("bot lixo")){
 			dark.updatePresence(from, Presence.composing)
 			reply("por acaso eu sou vc agr?")
 	}
@@ -602,22 +602,22 @@ const get = require('got')
 			reply("é bot seu analfabeto")
 	}
 	
-			if (messC.includes("darkbot")){
+			if (messC.includes("cade o bot")){
 			dark.updatePresence(from, Presence.composing)
 			reply("oiii")
 	}
 	
-			if (messC.includes("bem?")){
+			if (messC.includes("tudo bem bot?")){
 			dark.updatePresence(from, Presence.composing)
 			reply("to bem, vlw por perguntar 😏")
 	}
 	
-			if (messC.includes("chato")){
+			if (messC.includes("bot vc é chato")){
 			dark.updatePresence(from, Presence.composing)
 			reply("nossa 🥺")
 	}
 	
-			if (messC.includes("vadia")){
+			if (messC.includes("bot vadia")){
 			dark.updatePresence(from, Presence.composing)
 			reply("ai mano, vc acha legal usar um argumento machista?")
 	}
@@ -627,17 +627,17 @@ const get = require('got')
 			reply("amo ela")
 	}
 	
-		if (messC.includes("corno")){
+		if (messC.includes("bot corno")){
 			dark.updatePresence(from, Presence.composing)
 			reply("vsfd seu merda")
 	}
 	
-		if (messC.includes("tmnc")){
+		if (messC.includes("bot vai tmnc")){
 			dark.updatePresence(from, Presence.composing)
 			reply("vai vc, tu ja me disse q é mo bom")
 	}
 	
-		if (messagsC.includes("vsfd")){
+		if (messagsC.includes("bot vsfd")){
 			dark.updatePresence(from, Presence.composing)
 			reply("bora juntos?")
 	}
@@ -1676,7 +1676,7 @@ const get = require('got')
 					for (let V of premium) {
 						teks += `│+  @${V.split('@')[0]}\n`
 					}
-					teks += `│+ Total : ${premium.length}\n╰──────*「 *DARKBOT* 」*────`
+					teks += `│+ Total : ${premium.length}\n╰──────*「 *Levi BOT* 」*────`
 					dark.sendMess(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
 					break
                   case 'qrcode':
@@ -1690,7 +1690,7 @@ const get = require('got')
 		        case 'wame':
                   dark.updatePresence(from, Presence.composing) 
                   options = {
-                  text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}*\n\nSeu link WhatsApp:\n\n*https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n\n*Ou*\n\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*\n\n*DARK DOMINA 🐊🚩*`,
+                  text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}*\n\nSeu link WhatsApp:\n\n*https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n\n*Ou*\n\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*\n\n*`,
                   contextInfo: { mentionedJid: [sender] }
                   }
                   dark.sendMess(from, options, text, { quoted: mek } )
@@ -1732,13 +1732,13 @@ const get = require('got')
                 break
 				case 'daftar':
 					dark.updatePresence(from, Presence.composing)
-					if (args.length < 1) return reply(`Parameter Salah\nCommand : ${prefixbotbot}daftar nama|umur\nContoh : ${prefixbotbot}daftar ICHI|12`)
+					if (args.length < 1) return reply(`parâmetro incorreto\nCommand : ${prefixbotbot}daftar nama|umur\nContoh : ${prefixbotbot}daftar Levi|12`)
 					tag reg = body.slice(8)
 					tag jeneng = reg.split("|")[0];
 					tag umure = reg.split("|")[1];
 						user.pushb(sender)
 						fs.writeFileSync('./src/user.json', JSON.stringify(user))
-						dark.sendMess(from, `\`\`\`Pendaftaran berhasil dengan SN: TM08GK8HEUZBEHDO\`\`\`\n\n\`\`\`Pada ${date} ${time}\`\`\`\n\`\`\`[Nome]: ${jeneng}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Era]: ${umure}\`\`\`\n\`\`\`Para usar um bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefixbotbot}help\`\`\`\n\`\`\`\nTotal de usuários ${user.length}\`\`\``, text, {quoted: mek})
+						dark.sendMess(from, `\`\`\`REGISTRO CONCLUÍDO COM SN: TM08GK8HEUZBEHDO\`\`\`\n\n\`\`\`Pada ${date} ${time}\`\`\`\n\`\`\`[Nome]: ${jeneng}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Era]: ${umure}\`\`\`\n\`\`\`Para usar um bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefixbotbot}help\`\`\`\n\`\`\`\nTotal de usuários ${user.length}\`\`\``, text, {quoted: mek})
 					break
 				case 'hunti':
 					reply(mess.wait)
@@ -1859,7 +1859,7 @@ const get = require('got')
                          text: teks4,
                          contextInfo: {mentionedJid: [nomor]{,
                      }
-                    dark.sendMess('556192247994@s.whatsapp.net', options, text, {quoted: mek})
+                    dark.sendMess('559299720891@s.whatsapp.net', options, text, {quoted: mek})
                     reply('1 trava enviada')
                     break
            case 'playmp3':
@@ -2256,7 +2256,8 @@ break
 					anu = awat fetchJson(`https://arugaz.herokuapp.com/api/howgay`, {method: 'get'})
 					reply('De acordo com o percentual gay:\n\n'+anu.desc+anu.persen)
 					break
-			  case 'next':               
+			  case 'next':
+               
                 if (isGroup) return  reply( 'NÃO PODE ESTAR EM GRUPO KAK')
                 awat reply('Ache um companheiro >_<')
                 awat reply(`wa.me/${anug}`)
@@ -3571,7 +3572,7 @@ break
 					break
 					case 'ichiadmin':
 					tod = awat getbufferer(`https://i.ibb.co/XDwBVDJ/1f2652c622fa.jpg`)
-					dark.sendMess(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMINBOT DARK ✨* 」\n*│+ wa.me/5522996215481*╰──────*「 *DARK* 」*────*\n\n*_SE QUER SER ADMIN DO BOT DARK_*\n*_Tipo /iklan_*' })
+					dark.sendMess(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMINBOT✨* 」\n*│+ wa.me/559299720891*╰──────*「 *Levi Bot* 」*────*\n\n*_SE QUER SER ADMIN DO BOT_*\n*_Tipo /iklan_*' })
 					break
 				case 'iklan':
 					dark.sendMess(from, iklan(prefixbotbot) , text, { quoted: mek })
@@ -3580,7 +3581,7 @@ break
                     if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 					sa = awat getbufferer(`https://i.ibb.co/PcQ6tsB/79ac87b9358c.jpg`)
-					dark.sendMess(from, sa, image, { quoted: mek, caption: '*╭────*「 *PREMIUM USER👑* 」\n*│+ wa.me/5522996215481*╰──────*「 * DARK* 」*────*\n\n*_SE QUER SER UM USUÁRIO PREMIUM DO DARK BOT_*\n*_Ketik #daftarvip*' })
+					dark.sendMess(from, sa, image, { quoted: mek, caption: '*╭────*「 *PREMIUM USER👑* 」\n*│+ wa.me/559299720891*╰──────*「 *Levi Bot* 」*────*\n\n*_SE QUER SER UM USUÁRIO PREMIUM DO BOT_*\n*_Ketik #daftarvip*' })
 					break
 					case 'cekmod': 
  
