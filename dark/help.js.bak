@@ -4,10 +4,10 @@ const help = () => {
 ║
 ╠OLA 
 ║
-╠➥ 𝐃𝐀𝐑𝐊 𝐁𝐎𝐓
+╠➥ Levi Bot
 ╠➥ *3.2*
-╠➥ 𝐃𝐎𝐍𝐎:  ⃬⃗𝐷𝐴𝑅𝐾⃖  ☔
-╠➥ *wa.me/+5522996215481*
+╠➥ 𝐃𝐎𝐍𝐎:  §ųņ
+╠➥ *wa.me/+559299720891*
 ╠➥ 𝐒𝐓𝐀𝐓𝐔𝐒: ON
 ║
 ╠══✪〘 NOVIDADES 〙✪══
@@ -186,7 +186,17 @@ const help = () => {
 ║143 *${prefix}belle [img aleatórias]*
 ║144 *${prefix}pronomeneu [texto]*
 ║144 *${prefix}hobby*
-║
+║ *${prefix}jokenpo*
+║ *${prefix}animesite*
+║ *${prefix}textfun*
+║ *${prefix}destravas*
+║ *${prefix}travasfake*
+║ *${prefix}vod*
+║ *${prefix}randomtext*
+║ *${prefix}thisorthat*
+║ *${prefix}tabelas*
+║ *${prefix}randomcreepy*
+║ *${prefix}rituaisinfo*
 ╠══✪〘 COMANDOS DE VOZ 〙✪══
 ║
 ║145 *${prefix}ola*
@@ -298,16 +308,12 @@ const help = () => {
 ║
 ╠══✪〘 𝗗𝗢𝗡𝗢 〙✪══
 ║
-║ *NOME: 𝐷𝐴𝑅𝐾⃖  ☔*
-║ *INSTA: th.darkys*
-║ *WPP: wa.me/+5521997123716*
-║ *YOUTUBE: https://bit.ly/3qAjeNz*
+║ *NOME: S§ųņ*
+║ *INSTA: sun.ingemini*
+║ *WPP: wa.me/+559299720891*
+║ 
 ║
-║  *"Peita ou respeita 🐊🚩*
-║  *"kibadores, vão se fuder"*
-║
-║
-╚═〘 𝐃𝐀𝐑𝐊 𝐁𝐎𝐓 〙`
+╚═〘 Levi Bot 〙`
 }
 
 exports.help = help
