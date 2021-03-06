@@ -186,6 +186,17 @@ const help = () => {
 ║143 *${prefix}belle [img aleatórias]*
 ║144 *${prefix}pronomeneu [texto]*
 ║144 *${prefix}hobby*
+║ *${prefix}jokenpo*
+║ *${prefix}animesite*
+║ *${prefix}textfun*
+║ *${prefix}destravas*
+║ *${prefix}travasfake*
+║ *${prefix}vod*
+║ *${prefix}randomtext*
+║ *${prefix}thisorthat*
+║ *${prefix}tabelas*
+║ *${prefix}randomcreepy*
+║ *${prefix}rituaisinfo*
 ║
 ╠══✪〘 COMANDOS DE VOZ 〙✪══
 ║
